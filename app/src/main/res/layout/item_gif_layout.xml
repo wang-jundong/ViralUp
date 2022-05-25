@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_70sdp"
+    android:layout_height="@dimen/_50sdp"
+    android:gravity="center"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="@dimen/_69sdp"
+        android:layout_height="@dimen/_49sdp"
+        android:layout_centerInParent="true"
+        android:id="@+id/gif_image"
+        android:layout_margin="@dimen/_1sdp"
+        fresco:roundedCornerRadius="@dimen/_4sdp"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:placeholderImage="@drawable/image_placeholder"/>
+
+</RelativeLayout>

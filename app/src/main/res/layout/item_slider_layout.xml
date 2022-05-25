@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/slider_rlt"
+        android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/save_image"
+        android:scaleType="centerCrop"
+        app:placeholderImageScaleType="centerCrop"
+        app:placeholderImage="@drawable/image_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fresco:failureImage="@drawable/imagepreview"
+        app:actualImageScaleType="centerCrop"
+        fresco:placeholderImage="@drawable/imagepreview"/>
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_invite_friends">
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/recylerview_main_layout">
+
+
+        <LinearLayout
+            android:id="@+id/tabSuggestionTitle"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/suggested_accounts"
+                android:textColor="@color/darkgray"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                app:tint="@color/darkgray"
+                android:rotation="180"
+                android:src="@drawable/ic_round_alert"
+                android:layout_gravity="center"/>
+
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_above="@+id/load_more_progress"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tabSuggestionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recylerview"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/no_data_layout"
+            android:paddingTop="@dimen/_32sdp"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:visibility="gone"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:id="@+id/tvTitleNoData"
+                android:textSize="@dimen/_15sdp"/>
+
+            <TextView
+                android:id="@+id/tvMessageNoData"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/tvTitleNoData"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/dimgray"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:text=""
+                android:textSize="@dimen/_11sdp"/>
+
+        </RelativeLayout>
+
+
+        <ProgressBar
+            android:layout_alignParentBottom="true"
+            android:id="@+id/load_more_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/Progressbar_style"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</FrameLayout>

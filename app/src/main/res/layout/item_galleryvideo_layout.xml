@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_120sdp"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:id="@+id/thumb_image"
+        android:layout_margin="@dimen/_1sdp"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:placeholderImage="@drawable/image_placeholder"/>
+
+
+
+    <ImageButton
+        android:layout_width="@dimen/_26sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:scaleType="fitCenter"
+        android:padding="@dimen/_4sdp"
+        android:layout_margin="@dimen/_4sdp"
+        android:id="@+id/cross_btn"
+        android:layout_alignParentEnd="true"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_white_cross"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/black_gradient"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_txt"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:shadowColor="@color/darkgray"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:text=""
+            android:shadowRadius="3"
+            android:textSize="@dimen/_10sdp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

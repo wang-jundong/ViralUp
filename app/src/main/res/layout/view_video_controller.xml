@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="@dimen/_32sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    tools:ignore="ContentDescription,UnusedAttribute">
+
+    <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+        android:id="@+id/range_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="70dp"
+        app:bar_color="@android:color/transparent"
+        app:bar_highlight_color="@android:color/transparent"
+        app:data_type="_integer"
+        android:elevation="@dimen/_2sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/_4sdp"
+        app:left_thumb_image="@drawable/ic_min_seek"
+        app:right_thumb_image="@drawable/ic_max_seek"
+        />
+
+    <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:bar_color="@android:color/transparent"
+        app:bar_highlight_color="@android:color/transparent"
+        app:left_thumb_image="@drawable/ic_vertical_line"
+        android:id="@+id/seekbar_controller"
+        android:elevation="@dimen/_2sdp"
+        android:padding="@dimen/_4sdp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:id="@+id/view_image"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:background="@color/black"
+        android:layout_marginEnd="@dimen/_12sdp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_one"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"  />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_two"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"  />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_three"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"  />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_four"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"  />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_five"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"  />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_six"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_seven"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"  />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_eight"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"  />
+    </LinearLayout>
+</RelativeLayout>

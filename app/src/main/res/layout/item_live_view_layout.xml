@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="@dimen/_12sdp"
+    android:paddingEnd="@dimen/_12sdp"
+    android:paddingTop="@dimen/_8sdp"
+    android:paddingBottom="@dimen/_8sdp"
+    android:layout_height="wrap_content">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/ivProfile"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        app:roundAsCircle="true"
+        app:placeholderImage="@drawable/ic_user_icon" />
+
+    <TextView
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_toEndOf="@+id/ivProfile"
+        android:gravity="center_vertical|start"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvName"
+        android:textStyle="bold"
+        android:textSize="@dimen/_11sdp"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="4"
+        android:shadowColor="@color/black"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text=""
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

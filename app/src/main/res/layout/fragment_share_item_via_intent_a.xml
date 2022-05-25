@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@android:color/transparent"
+    tools:context=".ActivitesFragment.Profile.ShareItemViaIntentA">
+
+    <RelativeLayout
+        android:background="@drawable/d_round_top_corners_white"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:text="@string/share_to"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recylerview"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="@dimen/_300sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/gainsboro"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:text="@string/cancel_"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/bottom_btn"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

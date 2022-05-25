@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_12sdp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:gravity="center"
+        android:text="@string/join_our_stream_camera_feature"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp" />
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/swith_camera_btn"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/ic_circle"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/btn_switch_camera"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:layout_marginStart="@dimen/_15sdp"
+            android:id="@+id/live_btn_beautification"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/ic_circle"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/btn_beauty"
+            app:tint="@color/white" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/live_btn_mute_video"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/ic_circle"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/btn_mute_video"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:layout_marginStart="@dimen/_15sdp"
+            android:id="@+id/live_btn_mute_audio"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/ic_circle"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/btn_mute_audio"
+            app:tint="@color/white" />
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_38sdp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:id="@+id/tab_cancel"
+        android:background="@drawable/d_primary_border">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/cancel_"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

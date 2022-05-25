@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mirror_modes">
+        <item>Auto</item>
+        <item>Enabled</item>
+        <item>Disabled</item>
+    </string-array>
+
+    <string-array name="string_array_resolutions">
+        <item>320x240</item>
+        <item>480x360</item>
+        <item>640x360</item>
+        <item>640x480</item>
+        <item>960x540</item>
+        <item>1280x720</item>
+    </string-array>
+
+
+    <string-array name="bg_color_array">
+        <item>#F44336</item>
+        <item>#9C27B0</item>
+        <item>#FFEB3B</item>
+        <item>#CDDC39</item>
+        <item>#4CAF50</item>
+        <item>#00BCD4</item>
+    </string-array>
+
+
+    <string-array name="app_language">
+        <item>English</item>
+        <item>عربی</item>
+    </string-array>
+<!--    apply same number of language with same number of laguage code-->
+
+    <string-array name="app_language_code">
+        <item>en</item>
+        <item>ar</item>
+    </string-array>
+
+
+</resources>

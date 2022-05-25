@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65sdp"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingEnd="@dimen/_12sdp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/user_image"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            fresco:roundAsCircle="true"
+            app:placeholderImageScaleType="centerCrop"
+            app:actualImageScaleType="centerCrop"
+            app:failureImageScaleType="centerCrop"
+            fresco:placeholderImage="@drawable/ic_user_icon" />
+
+
+       <LinearLayout
+           android:layout_centerVertical="true"
+           android:layout_toEndOf="@+id/user_image"
+           android:layout_toStartOf="@+id/iv_tick"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="@dimen/_8sdp"
+           android:layout_marginEnd="@dimen/_8sdp"
+           android:gravity="start|center_vertical"
+           android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/tvUserName"
+               android:layout_gravity="center_vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textAlignment="viewStart"
+               android:includeFontPadding="false"
+               android:text=""
+               android:textColor="@color/black"
+               android:textSize="@dimen/_11sdp"
+               android:textStyle="normal"
+               android:gravity="center_vertical"
+               tools:ignore="RtlCompat" />
+
+           <TextView
+               android:layout_marginTop="@dimen/_4sdp"
+               android:id="@+id/tvFullName"
+               android:layout_gravity="center_vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textAlignment="viewStart"
+               android:includeFontPadding="false"
+               android:text=""
+               android:textColor="@color/darkgray"
+               android:textSize="@dimen/_10sdp"
+               android:textStyle="normal"
+               android:gravity="center_vertical"
+               tools:ignore="RtlCompat" />
+
+       </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_tick"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_tick"
+            app:tint="@color/colorPrimary"
+            android:visibility="gone"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mainLayout"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

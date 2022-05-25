@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:layout_gravity="center_vertical"
+        android:paddingEnd="@dimen/_15sdp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/ivProfile"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            app:actualImageScaleType="centerCrop"
+            app:failureImageScaleType="centerCrop"
+            app:placeholderImageScaleType="centerCrop"
+            fresco:placeholderImage="@drawable/image_placeholder"
+            fresco:roundAsCircle="true" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_toEndOf="@+id/ivProfile"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="123213"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="normal"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/block_layout"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_rounded_solid_primary">
+
+            <TextView
+                android:id="@+id/unblock_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="@string/unblock"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8sdp" />
+
+
+            <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/unblock_btn"
+                android:src="@drawable/ic_plus"
+                android:visibility="visible"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:background="@color/darkgray"
+        android:orientation="vertical" />
+</LinearLayout>

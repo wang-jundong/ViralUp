@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/searchMain_F"
+    android:background="@color/white"
+    tools:context=".ActivitesFragment.Search.SearchMainA">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            app:cardCornerRadius="@dimen/_6sdp"
+            app:cardElevation="0dp"
+            android:id="@+id/search_layout"
+            app:cardBackgroundColor="@color/lightgraycolor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:paddingStart="@dimen/_6sdp"
+                android:paddingEnd="@dimen/_6sdp">
+
+                <ImageButton
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:id="@+id/search"
+                    android:padding="@dimen/_2sdp"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:tint="@color/dimgray"
+                    android:src="@drawable/ic_discovery_gray"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/search_"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:paddingEnd="@dimen/_2sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:textSize="@dimen/_11sdp"
+                    android:inputType="textNoSuggestions"
+                    android:id="@+id/search_edit"
+                    android:imeOptions="actionSearch"
+                    android:textColorHint="@color/darkgray"
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@+id/search"
+                    android:background="@color/transparent"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/search_"
+                    android:id="@+id/search_btn"
+                    android:textSize="@dimen/_11sdp"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorAccent"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_layout">
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/colorPrimary"
+                app:tabIndicatorHeight="@dimen/_2sdp"
+                app:tabMode="fixed"
+                app:tabPaddingEnd="@dimen/_6sdp"
+                app:tabPaddingStart="@dimen/_6sdp"
+                app:tabSelectedTextColor="@color/colorPrimary"
+                app:tabTextAppearance="@style/tab_text"
+                app:tabTextColor="@color/darkgray"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/viewpager"
+                android:layout_below="@+id/tabs">
+            </androidx.viewpager.widget.ViewPager>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recent_layout"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:layout_below="@+id/search_layout">
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:id="@+id/recent_title_layout">
+
+                <TextView
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recent_search"
+                    android:textSize="@dimen/_10sdp"
+                    android:padding="@dimen/_6sdp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clear_all"
+                    android:textSize="@dimen/_10sdp"
+                    android:padding="@dimen/_6sdp"
+                    android:id="@+id/clear_all_txt"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recylerview"
+                android:layout_below="@+id/recent_title_layout"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/qrContainerBg"
+    android:background="@color/colorPrimary"
+    tools:context=".ActivitesFragment.Profile.Setting.QrCodeProfileA">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white" />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/ivShareQrCode"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_1sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_profile_share_white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:id="@+id/tabScreenShot"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:id="@+id/codeCard"
+            android:padding="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_22sdp"
+            android:layout_marginEnd="@dimen/_22sdp"
+            android:background="@drawable/rectengle_round_corner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ivQr"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_170sdp"
+                android:layout_below="@+id/tvName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_4sdp" />
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_below="@+id/ivQr"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+                android:text="@string/scan_qr_code_to_follow_account"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_below="@+id/tvTitle"
+                android:id="@+id/ivLogo"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:src="@mipmap/ic_launcher"
+                android:layout_height="@dimen/_40sdp"/>
+
+
+        </RelativeLayout>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/ivUserProfile"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_25sdp"
+            app:placeholderImage="@drawable/image_placeholder"
+            app:roundAsCircle="true"
+            app:roundingBorderColor="@color/white"
+            app:roundingBorderWidth="@dimen/_1sdp" />
+
+
+        <TextView
+            android:layout_below="@id/codeCard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tap_to_change_color"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="normal" />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:paddingStart="@dimen/_22sdp"
+        android:paddingEnd="@dimen/_22sdp"
+        android:layout_marginBottom="@dimen/_22sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:id="@+id/tabSaveQr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:src="@drawable/ic_save_qr"
+                app:tint="@color/white"
+                android:layout_height="@dimen/_24sdp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_to_device"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:id="@+id/tabScanQr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:src="@drawable/ic_qr_scan"
+                app:tint="@color/white"
+                android:layout_height="@dimen/_24sdp"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scan_qr_code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

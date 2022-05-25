@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".ActivitesFragment.Profile.UserVideos.UserVideoF">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/recylerview"
+        android:fillViewport="true"
+        android:layout_above="@+id/load_more_progress" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/no_data_layout"
+        android:paddingTop="@dimen/_32sdp"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:visibility="gone"
+        android:background="@color/white">
+
+      <TextView
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:text=""
+          android:gravity="center"
+          android:textColor="@color/black"
+          android:id="@+id/tvTitleNoData"
+          android:textSize="@dimen/_15sdp"/>
+
+      <TextView
+          android:id="@+id/tvMessageNoData"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:layout_below="@+id/tvTitleNoData"
+          android:layout_centerHorizontal="true"
+          android:gravity="center"
+          android:textColor="@color/dimgray"
+          android:layout_marginStart="@dimen/_12sdp"
+          android:layout_marginEnd="@dimen/_12sdp"
+          android:text=""
+          android:textSize="@dimen/_11sdp"/>
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:layout_alignParentBottom="true"
+        android:id="@+id/load_more_progress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/Progressbar_style"
+        android:visibility="gone" />
+
+
+  </RelativeLayout>
+
+</FrameLayout>

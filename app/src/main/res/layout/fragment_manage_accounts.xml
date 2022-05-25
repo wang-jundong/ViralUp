@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/d_round_top_corners_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:background="@drawable/d_bottom_gray_line"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textAllCaps="false"
+                android:text="@string/switch_account"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal"
+                android:gravity="center"
+                />
+
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="@dimen/_24sdp"
+                app:tint="@color/black"
+                android:padding="@dimen/_1sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/ic_cross"
+                android:layout_gravity="center"/>
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/tabAddAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/_12sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:gravity="center_vertical"
+            android:background="@color/white">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_42sdp"
+                android:layout_height="@dimen/_42sdp"
+                app:cardBackgroundColor="@color/lightgraycolor"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/suggestionBtn"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:src="@drawable/ic_plus"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textAllCaps="false"
+                android:text="@string/add_account"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

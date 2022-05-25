@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="@dimen/_4sdp"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:textColor="@color/darkgray"
+        android:background="@drawable/d_round_gray_background_2"
+        android:id="@+id/datetxt"/>
+
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/datetxt"
+        android:id="@+id/chatimage"
+        fresco:roundedCornerRadius="@dimen/_8sdp"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:placeholderImage="@drawable/image_placeholder"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/chatimage"
+        android:textSize="@dimen/_10sdp"
+        android:visibility="visible"
+        android:id="@+id/message_seen"
+        android:textColor="@color/darkgray"
+        android:layout_marginEnd="@dimen/_12sdp"/>
+
+</RelativeLayout>

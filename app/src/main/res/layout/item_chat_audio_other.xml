@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_22sdp"
+        android:id="@+id/not_send_messsage"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:src="@drawable/ic_not_send_message"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_toEndOf="@+id/not_send_messsage">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="@dimen/_4sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:textColor="@color/darkgray"
+            android:background="@drawable/d_round_gray_background_2"
+            android:id="@+id/datetxt"/>
+
+
+
+        <ProgressBar
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:visibility="gone"
+            android:id="@+id/p_bar"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_toEndOf="@+id/audio_bubble"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            android:padding="@dimen/_6sdp"
+            android:layout_below="@id/datetxt"
+            android:id="@+id/audio_bubble"
+            android:background="@drawable/d_other_msg_background">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:id="@+id/play_btn"
+                    android:scaleType="fitXY"
+                    app:tint="@color/black"
+                    android:clickable="false"
+                    android:src="@drawable/ic_play_icon"
+                    android:background="@color/transparent"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seek_bar"
+                    android:layout_marginStart="@dimen/_26sdp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toStartOf="@+id/total_time"
+                    android:layout_centerVertical="true"
+                    android:theme="@style/MySeekBar2"
+                    android:clickable="false"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/black"
+                    android:id="@+id/total_time"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/audio_bubble"
+            android:textSize="@dimen/_10sdp"
+            android:id="@+id/message_seen"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:textColor="@color/darkgray"
+            android:layout_marginEnd="@dimen/_12sdp"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

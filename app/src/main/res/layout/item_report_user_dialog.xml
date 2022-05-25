@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_18sdp"
+    android:layout_marginTop="@dimen/_16sdp"
+    android:layout_marginEnd="@dimen/_18sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tabShareProfile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:visibility="visible">
+
+
+
+        <ImageView
+            android:id="@+id/ivShareProfile"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:padding="@dimen/_1sdp"
+            android:src="@drawable/ic_share_profile"
+            android:tint="@color/darkgray" />
+
+        <TextView
+            android:id="@+id/tvShareProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="@string/username"
+            android:text="@string/share_profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tabBlockUser"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:visibility="visible">
+
+        <View
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/gainsboro"/>
+        <ImageView
+            android:id="@+id/ivBlockUser"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:padding="@dimen/_1sdp"
+            android:src="@drawable/ic_user_block"
+            android:tint="@color/darkgray" />
+
+        <TextView
+            android:id="@+id/tvBlockUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/block_user"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tabReportUser"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:visibility="visible">
+
+        <View
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/gainsboro"/>
+
+        <ImageView
+            android:id="@+id/ivReportUser"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:padding="@dimen/_1sdp"
+            android:src="@drawable/ic_report_user_content"
+            android:tint="@color/darkgray" />
+
+        <TextView
+            android:id="@+id/tvReportUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="@string/username"
+            android:text="@string/report_user"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/d_round_top_corners_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:background="@drawable/d_bottom_gray_line"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/titleTab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textAllCaps="false"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="@dimen/_22sdp"
+                app:tint="@color/black"
+                android:layout_height="@dimen/_22sdp"
+                android:src="@drawable/ic_cross"
+                android:layout_gravity="center"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/titleTab"
+            android:layout_centerHorizontal="true"
+           android:alpha="0"
+            android:id="@+id/tabshowNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/recyclerTab"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/tabLiveNotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_38sdp">
+
+                    <ImageView
+                        android:id="@+id/ivliveNoti"
+                        android:layout_centerVertical="true"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/ic_live_notification"
+                        app:tint="@color/darkgray"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/ivliveNoti"
+                        android:layout_toStartOf="@+id/iv_live_tick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:gravity="start|center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="viewStart"
+                            android:includeFontPadding="false"
+                            android:text="@string/get_all_live_notification"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="normal"
+                            android:gravity="center_vertical"
+                            tools:ignore="RtlCompat" />
+
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/iv_live_tick"
+                        android:layout_centerVertical="true"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_circle_selection"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/tabMuteNotification"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_38sdp">
+
+                    <ImageView
+                        android:id="@+id/ivMuteNoti"
+                        android:layout_centerVertical="true"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/ic_mute_notification"
+                        app:tint="@color/darkgray"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/ivMuteNoti"
+                        android:layout_toStartOf="@+id/ivMuteNick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:gravity="start|center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="viewStart"
+                            android:includeFontPadding="false"
+                            android:text="@string/turn_off_live_notificaiton"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="normal"
+                            android:gravity="center_vertical"
+                            tools:ignore="RtlCompat" />
+
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/ivMuteNick"
+                        android:layout_centerVertical="true"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_circle_stroke"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/recyclerTab"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tabAddAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_12sdp"
+                android:gravity="center_vertical"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textAllCaps="false"
+                    android:text="@string/live_notification_description"
+                    android:textColor="@color/darkgray"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="normal"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/titleTab"
+            android:layout_centerHorizontal="true"
+            android:alpha="0"
+            android:id="@+id/tabshowProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/white">
+
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/user_image"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    fresco:roundAsCircle="true"
+                    app:placeholderImageScaleType="centerCrop"
+                    app:actualImageScaleType="centerCrop"
+                    app:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@drawable/ic_user_icon" />
+
+
+                <TextView
+                    android:id="@+id/tvMessage"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:includeFontPadding="false"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    tools:ignore="RtlCompat" />
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:id="@+id/tvFollowBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_38sdp"
+                    android:background="@drawable/button_rounded_solid_primary"
+                    android:includeFontPadding="false"
+                    android:text="@string/follow"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

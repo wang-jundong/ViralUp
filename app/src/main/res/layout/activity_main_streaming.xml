@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_background">
+
+    <ImageView
+        android:id="@+id/setting_button"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_12sdp"
+        android:src="@drawable/btn_setting"
+        android:onClick="onSettingClicked"/>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/middle_layout"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:focusableInTouchMode="true">
+        <ImageView
+            android:layout_marginTop="@dimen/_40sdp"
+            android:id="@+id/main_logo"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_140sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_logo"
+            app:tint="@color/white"/>
+        <EditText
+            android:layout_marginTop="@dimen/_32sdp"
+            android:id="@+id/topic_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/white"
+            android:hint="@string/pick_a_topic_to_add"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:lines="1"
+            android:focusable="false"
+            android:clickable="false"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="@dimen/_22sdp"
+            android:id="@+id/start_broadcast_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_38sdp"
+            android:paddingStart="@dimen/_32sdp"
+            android:paddingEnd="@dimen/_32sdp"
+            android:gravity="center"
+            android:text="@string/start_live_broadcast"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:onClick="onStartBroadcastClicked"
+            android:background="@drawable/start_broadcast_bg"/>
+    </LinearLayout>
+
+</RelativeLayout>

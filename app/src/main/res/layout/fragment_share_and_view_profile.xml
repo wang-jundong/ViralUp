@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".ActivitesFragment.Profile.ShareAndViewProfileF">
+
+    <RelativeLayout
+        android:background="@drawable/d_round_top_corners_white"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/user_image"
+                    android:layout_centerInParent="true"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_130sdp"
+                    fresco:roundAsCircle="true"
+                    app:placeholderImageScaleType="centerCrop"
+                    app:actualImageScaleType="centerCrop"
+                    app:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@drawable/ic_user_icon" />
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/viewSelfScroll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/gainsboro"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_38sdp"
+                        android:text="@string/share_to"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recylerview"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="@dimen/_300sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_6sdp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/gainsboro"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:text="@string/cancel_"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/bottom_btn"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

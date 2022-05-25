@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ActivitesFragment.VideoRecording.PreviewVideoA">
+
+
+<com.qboxus.musictok.ActivitesFragment.VideoRecording.MovieWrapperView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:id="@+id/layout_movie_wrapper"/>
+
+
+    <RelativeLayout
+        android:paddingEnd="@dimen/_12sdp"
+        android:paddingStart="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <ImageButton
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:id="@+id/goBack"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:tint="@color/white"
+            android:src="@drawable/ic_back"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recylerview"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:background="@drawable/button_rounded_background"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11sdp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recylerview"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="@dimen/_12sdp"
+        android:background="@color/fifty_transparent_black"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

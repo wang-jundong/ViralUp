@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/hashtag_icon"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_centerVertical="true"
+            app:actualImageResource="@drawable/ic_hashtag"
+            app:placeholderImage="@drawable/ic_hashtag"
+            app:roundAsCircle="true" />
+
+
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="start|center_vertical"
+            android:layout_toEndOf="@+id/hashtag_icon"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/d_round_gray_background_2"
+            android:id="@+id/countAndSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:paddingEnd="@dimen/_2sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="0.0"
+                android:id="@+id/views_txt"
+                android:textSize="@dimen/_10sdp"
+                android:backgroundTint="@color/gainsboro"
+                />
+
+            <ImageView
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/recv_ic_arrow"
+                android:rotation="180"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

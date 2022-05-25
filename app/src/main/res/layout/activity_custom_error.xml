@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/customactivityoncrash_error_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/error_occurred"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/detail_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/error_detail"
+                android:layout_marginTop="@dimen/_30sdp"/>
+
+            <Button
+                android:id="@+id/restart_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/close_app"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+            <Button
+                android:id="@+id/send_reposrt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_report"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

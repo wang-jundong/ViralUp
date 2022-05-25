@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/black"
+    tools:context=".ActivitesFragment.Profile.SeeFullImageA">
+
+    <LinearLayout
+        android:padding="@dimen/_12sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/close_gallery"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_cross_white" />
+
+    </LinearLayout>
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/single_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:placeholderImageScaleType="fitCenter"
+        app:actualImageScaleType="fitCenter"
+        fresco:placeholderImage="@drawable/ic_user_icon" />
+
+</RelativeLayout>

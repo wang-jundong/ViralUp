@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainMenuFragment"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.qboxus.musictok.MainMenu.MainMenuActivity">
+
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+
+        <com.qboxus.musictok.MainMenu.CustomViewPager
+            android:id="@+id/viewpager"
+            android:layout_above="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+       <com.google.android.material.tabs.TabLayout
+           android:id="@+id/tabs"
+           android:visibility="gone"
+           android:layout_weight="1"
+           android:layout_height="@dimen/_40sdp"
+           android:layout_width="match_parent"
+           app:tabMode="fixed"
+           app:tabSelectedTextColor="@color/black"
+           android:gravity="center"
+           app:tabGravity="fill"
+           app:tabPaddingStart="0dp"
+           app:tabPaddingEnd="0dp"
+           android:elevation="@dimen/_2sdp"
+           app:tabTextColor="@color/dimgray"
+           android:layout_centerHorizontal="true"
+           app:tabTextAppearance="@style/Base.TextAppearance.AppCompat.Small"
+           app:tabIndicatorColor="@color/transparent"
+           android:layout_alignParentBottom="true"/>
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_40sdp"
+           android:scaleType="fitXY"
+           android:layout_centerHorizontal="true"
+           android:src="@drawable/black_gradient"
+           android:layout_alignParentBottom="true"/>
+
+   </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_22sdp"
+        android:id="@+id/not_send_messsage"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:src="@drawable/ic_not_send_message"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_toEndOf="@+id/not_send_messsage">
+
+        <ProgressBar
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:visibility="gone"
+            android:id="@+id/p_bar"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/upperlayout"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:padding="@dimen/_4sdp"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/_4sdp"
+        android:textColor="@color/darkgray"
+        android:background="@drawable/d_round_gray_background_2"
+        android:id="@+id/datetxt"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/upperlayout"
+            android:layout_below="@+id/datetxt"
+            android:orientation="vertical"
+            android:gravity="start"
+             android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_margin="@dimen/_6sdp"
+            android:id="@+id/chatimage_layout">
+
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_160sdp"
+                android:id="@+id/chatimage"
+                android:src="@color/black"
+                android:scaleType="centerCrop"
+                app:roundedCornerRadius="@dimen/_6sdp"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:placeholderImageScaleType="centerCrop"
+                fresco:placeholderImage="@drawable/image_placeholder" />
+
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/ic_video_play"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10sdp"
+                android:id="@+id/msg_date"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:gravity="center_vertical"
+                android:layout_gravity="bottom|start"
+                android:textColor="@color/dimgray" />
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

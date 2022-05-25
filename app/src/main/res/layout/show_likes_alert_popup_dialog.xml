@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_20sdp">
+
+    <LinearLayout
+        android:background="@drawable/less_round_edge_ractengle_white"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_3sdp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:background="@drawable/less_round_top_edge_ractengle_blue"
+            android:src="@drawable/ic_likes"/>
+        <TextView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/total_likes"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text=""
+            android:textColor="@color/darkgray"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="normal"
+            android:gravity="center"
+            />
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/gainsboro" />
+
+
+        <LinearLayout
+            android:gravity="center_vertical|end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvDone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:includeFontPadding="false"
+                android:textAllCaps="false"
+                android:text="@string/ok"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

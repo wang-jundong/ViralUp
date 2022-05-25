@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_select_report"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ActivitesFragment.Profile.ReportTypeA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/d_bottom_gray_line">
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_back"
+                android:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="@string/reports"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            app:cardCornerRadius="@dimen/_6sdp"
+            app:cardElevation="0dp"
+            android:id="@+id/search_layout"
+            app:cardBackgroundColor="@color/lightgraycolor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:paddingStart="@dimen/_6sdp"
+                android:paddingEnd="@dimen/_6sdp">
+
+                <ImageButton
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:id="@+id/search"
+                    android:padding="@dimen/_2sdp"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:tint="@color/dimgray"
+                    android:src="@drawable/ic_discovery_gray"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/search_"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:paddingEnd="@dimen/_2sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:textSize="@dimen/_11sdp"
+                    android:inputType="textNoSuggestions"
+                    android:id="@+id/search_edit"
+                    android:imeOptions="actionSearch"
+                    android:textColorHint="@color/darkgray"
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@+id/search"
+                    android:background="@color/transparent"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/search_"
+                    android:id="@+id/search_btn"
+                    android:textSize="@dimen/_11sdp"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorAccent"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_layout">
+
+            <TextView
+                android:layout_alignParentStart="true"
+                android:id="@+id/tv_title_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="@string/select_a_reason"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/recylerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_title_home"
+                android:layout_marginTop="@dimen/_12sdp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

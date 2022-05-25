@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".ActivitesFragment.Profile.Setting.UpdateEmailPhoneA">
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingEnd="@dimen/_12sdp"
+        android:paddingStart="@dimen/_12sdp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/d_bottom_gray_line">
+
+        <ImageButton
+            android:id="@+id/goBack"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_back"
+            android:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/tabPhoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_12sdp"
+        android:padding="@dimen/_8sdp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:background="@drawable/d_bottom_gray_line"
+            android:id="@+id/phoneDiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp">
+
+
+            <TextView
+                android:id="@+id/country_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text=""
+                android:textColor="@color/dimgray"
+                android:textSize="@dimen/_11sdp" />
+
+            <View
+                android:id="@+id/line_beside_country"
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/country_code"
+                android:background="@color/graycolor" />
+
+            <EditText
+                android:id="@+id/phone_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_toEndOf="@+id/line_beside_country"
+                android:backgroundTint="@color/transparent"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:textColorHint="@color/graycolor"
+                android:textSize="@dimen/_11sdp" />
+        </RelativeLayout>
+
+
+        <Button
+            android:layout_below="@+id/phoneDiv"
+            android:id="@+id/btnSendCodePhone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:gravity="center"
+            android:text="@string/send_code"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            android:theme="@style/Button_style" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/tabEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:layout_margin="@dimen/_12sdp">
+
+
+        <LinearLayout
+            android:id="@+id/emailDiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:background="@drawable/d_bottom_gray_line"
+                android:id="@+id/email_edit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/graycolor"
+                android:textSize="@dimen/_11sdp" />
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnSendCodeEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_below="@+id/emailDiv"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:clickable="false"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            android:theme="@style/Button_style" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

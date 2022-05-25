@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/black"
+    android:padding="@dimen/_12sdp">
+
+    <ProgressBar
+        android:id="@+id/progress_trimmer"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:id="@+id/txt_process"
+        android:textColor="@color/white"
+        android:text="@string/txt_trimming_video"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:id="@+id/txt_cancel"
+        android:focusable="true"
+        android:textColor="@color/colorAccent"
+        android:text="@string/txt_cancel"/>
+</LinearLayout>

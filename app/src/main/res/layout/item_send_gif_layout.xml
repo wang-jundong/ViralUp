@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_62sdp"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_2sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:background="@drawable/d_white_border"
+        android:layout_margin="@dimen/_2sdp"
+        android:elevation="@dimen/_1sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <com.facebook.drawee.view.SimpleDraweeView
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/_45sdp"
+              android:id="@+id/gif_image"
+              fresco:roundedCornerRadius="@dimen/_4sdp"
+              fresco:actualImageScaleType="fitCenter"
+              fresco:placeholderImageScaleType="centerCrop"
+              fresco:placeholderImage="@drawable/image_placeholder"/>
+
+
+          <ImageView
+              android:visibility="gone"
+              android:id="@+id/ivSelect"
+              android:layout_gravity="top|end"
+              android:layout_margin="@dimen/_4sdp"
+              android:layout_width="@dimen/_14sdp"
+              android:layout_height="@dimen/_14sdp"
+              app:tint="@color/colorPrimary"
+              android:src="@drawable/ic_round_check"/>
+
+      </FrameLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:includeFontPadding="false"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10sdp"
+            android:id="@+id/name_txt"
+            android:textColor="@color/black"/>
+
+       <LinearLayout
+           android:layout_marginBottom="@dimen/_2sdp"
+           android:layout_marginTop="@dimen/_2sdp"
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <ImageView
+               android:layout_width="@dimen/_12sdp"
+               android:layout_height="@dimen/_12sdp"
+               android:scaleType="fitCenter"
+               android:src="@drawable/ic_coin"/>
+
+           <TextView
+               android:includeFontPadding="false"
+               android:layout_marginStart="@dimen/_4sdp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="0"
+               android:textSize="@dimen/_8sdp"
+               android:id="@+id/coin_txt"
+               android:textColor="@color/black"/>
+
+       </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,175 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/discovery_container"
+    android:background="@color/white"
+    tools:context="com.qboxus.musictok.ActivitesFragment.DiscoverF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            app:cardCornerRadius="@dimen/_6sdp"
+            app:cardElevation="0dp"
+            android:id="@+id/search_layout"
+            app:cardBackgroundColor="@color/lightgraycolor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:paddingStart="@dimen/_6sdp"
+                android:paddingEnd="@dimen/_6sdp">
+
+                <ImageButton
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:id="@+id/search"
+                    android:padding="@dimen/_2sdp"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:tint="@color/dimgray"
+                    android:src="@drawable/ic_discovery_gray"/>
+
+                <TextView
+                    android:id="@+id/search_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/search"
+                    android:backgroundTint="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingEnd="@dimen/_2sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:text="@string/search_"
+                    android:textColor="@color/darkgray"
+                    android:textSize="@dimen/_11sdp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:visibility="gone"
+                android:id="@+id/dataContainer"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/app_bar"
+                    style="@style/Widget.Design.AppBarLayout"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:contentInsetLeft="0dp"
+                        app:contentInsetStart="0dp"
+                        app:contentScrim="@color/white"
+                        app:layout_scrollFlags="snap|scroll|enterAlways">
+
+
+                        <LinearLayout
+                            app:layout_collapseMode="parallax"
+                            app:layout_collapseParallaxMultiplier="0.7"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/top_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_130sdp">
+
+                                <androidx.viewpager.widget.ViewPager
+                                    android:id="@+id/viewPager"
+                                    android:layout_centerInParent="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+
+                                <RelativeLayout
+                                    android:layout_centerInParent="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="bottom|center_horizontal">
+
+                                    <com.rd.PageIndicatorView
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:id="@+id/pageIndicatorView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="@dimen/_4sdp"
+                                        android:visibility="visible"
+                                        app:piv_animationType="worm"
+                                        app:piv_dynamicCount="true"
+                                        app:piv_interactiveAnimation="true"
+                                        app:piv_radius="@dimen/_2sdp"
+                                        app:piv_selectedColor="@color/colorPrimary"
+                                        app:piv_unselectedColor="@color/graycolor"
+                                        app:piv_viewPager="@id/viewPager" />
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.appcompat.widget.Toolbar>
+
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+
+                <include layout="@layout/layout_discover_bottom_tabs" />
+
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+            <include layout="@layout/shimmer_list_slider_layout" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

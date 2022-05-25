@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:background="@drawable/d_round_top_corners_white"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/username_txt"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_12sdp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:minHeight="@dimen/_140sdp"
+                    android:layout_height="@dimen/_180sdp"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="right"
+                    app:sliderAutoCycleEnabled="false"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="@dimen/_6sdp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="@dimen/_2sdp"
+                    app:sliderIndicatorRadius="@dimen/_2sdp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="1"
+                    android:layout_centerHorizontal="false"
+                    android:layout_alignParentTop="false"
+                    app:sliderStartAutoCycle="false" />
+
+                <ProgressBar
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/progressBar"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp">
+
+                <LinearLayout
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/recharge_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_26sdp"
+                        android:layout_height="@dimen/_26sdp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_coin"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="0"
+                        android:id="@+id/coins_txt"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:textSize="@dimen/_13sdp"/>
+
+
+                    <ImageView
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:scaleType="fitCenter"
+                        android:rotation="180"
+                        android:src="@drawable/recv_ic_arrow"/>
+
+
+                </LinearLayout>
+
+
+
+                <Button
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="@dimen/_55sdp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tab_send_gift"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="@string/send"
+                    android:textSize="@dimen/_11sdp"
+                    android:theme="@style/Button_style" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

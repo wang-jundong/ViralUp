@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_180sdp"
+    android:layout_marginEnd="@dimen/_8sdp"
+    android:layout_height="@dimen/_220sdp"
+    android:id="@+id/mainlayout"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/button_rounded_solid_light_black">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_220sdp"
+        android:id="@+id/userGif"
+        fresco:placeholderImage="@drawable/button_rounded_solid_light_black" />
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/user_image"
+        fresco:placeholderImage="@drawable/ic_user_icon"
+        app:roundAsCircle="true"/>
+
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/user_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="@dimen/_4sdp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/_13sdp"
+            android:maxLines="1"
+            android:id="@+id/tvName"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"/>
+        <TextView
+            android:layout_marginTop="@dimen/_2sdp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:maxLines="1"
+            android:textSize="@dimen/_11sdp"
+            android:ellipsize="end"
+            android:id="@+id/tvUserName"
+            android:textStyle="bold"
+            android:textColor="@color/colorwhite_30"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"/>
+
+
+        <TextView
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:id="@+id/tvFollowBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/button_rounded_solid_primary"
+            android:paddingStart="@dimen/_26sdp"
+            android:paddingEnd="@dimen/_26sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:includeFontPadding="false"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/follow"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+
+
+
+    <ImageView
+        android:id="@+id/ivCross"
+        android:layout_margin="@dimen/_8sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        app:tint="@color/darkgray"
+        android:src="@drawable/ic_cross"/>
+
+</RelativeLayout>

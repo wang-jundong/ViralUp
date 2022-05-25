@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_120sdp"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_119sdp"
+        android:id="@+id/thumb_image"
+        fresco:placeholderImage="@drawable/image_placeholder"
+        android:scaleType="centerCrop"/>
+
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/black_gradient"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_eye_white"/>
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_txt"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:shadowColor="@color/darkgray"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:textSize="@dimen/_10sdp"
+        android:shadowRadius="3"
+        android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

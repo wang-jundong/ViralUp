@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ActivitesFragment.Profile.InviteFriends.InviteFriendsFromContactsA">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:background="@drawable/d_bottom_gray_line"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_back"
+            android:tint="@color/black" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/contacts"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/tabInviteOnMultiple"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:text="@string/invite_via"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+                android:gravity="center_vertical|start"
+                android:textAlignment="viewStart"
+                android:textColor="@color/darkgray"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="0dp"
+                android:id="@+id/inviteRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tabInviteOnMultiple">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvAllFriend"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:text="@string/all_friends"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold"
+            android:gravity="center_vertical|start"
+            android:textAlignment="viewStart"
+            android:textColor="@color/darkgray"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_below="@+id/tvAllFriend"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recylerview"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/no_data_layout"
+            android:paddingTop="@dimen/_32sdp"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:visibility="gone"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:id="@+id/tvTitleNoData"
+                android:textSize="@dimen/_15sdp"/>
+
+            <TextView
+                android:id="@+id/tvMessageNoData"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/tvTitleNoData"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/dimgray"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:text=""
+                android:textSize="@dimen/_11sdp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

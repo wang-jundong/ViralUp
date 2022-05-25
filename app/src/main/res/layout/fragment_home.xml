@@ -1,0 +1,236 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    xmlns:swagpoints="http://schemas.android.com/apk/res-auto"
+    tools:context="com.qboxus.musictok.ActivitesFragment.HomeF">
+
+  <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+      android:layout_width="match_parent"
+      android:id="@+id/swiperefresh"
+      android:layout_height="match_parent">
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+    <fr.castorflex.android.verticalviewpager.VerticalViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:background="@color/black"
+        android:orientation="vertical" />
+
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/tabNoFollower"
+        android:background="@color/black"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <RelativeLayout
+          android:layout_gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTopTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/trending_creators"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvSubTitle"
+            android:layout_below="@+id/tvTopTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/follow_an_account_here_to_see_there_latest_video"
+            android:textColor="@color/lightgraycolor"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="normal" />
+
+        <com.yarolegovich.discretescrollview.DiscreteScrollView
+            android:layout_below="@+id/tvSubTitle"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:id="@+id/rvSugesstion"
+            android:overScrollMode="never"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/tvNoSuggestionFound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/no_suggested_account_found"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+
+      </RelativeLayout>
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_btn_layout">
+
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/_12sdp"
+          android:layout_marginTop="@dimen/_22sdp"
+          android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/following"
+            android:id="@+id/following_btn"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:padding="@dimen/_12sdp"
+            android:shadowColor="@color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:ellipsize="end"
+            android:shadowRadius="3"
+            android:textColor="@color/graycolor2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/related"
+            android:id="@+id/related_btn"
+            android:textSize="@dimen/_13sdp"
+            android:padding="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="3"
+            android:ellipsize="end"
+            android:textColor="@color/white"/>
+
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/live_users"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentEnd="true"
+          android:padding="@dimen/_12sdp"
+          android:textStyle="bold"
+          android:text="@string/live_users"
+          android:textSize="@dimen/_13sdp"
+          android:shadowColor="@color/black"
+          android:shadowDx="1"
+          android:shadowDy="1"
+          android:shadowRadius="3"
+          android:textColor="@color/white"
+          android:layout_marginTop="@dimen/_22sdp"
+          android:layout_marginEnd="@dimen/_12sdp"
+          />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/top_btn_layout"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:id="@+id/upload_video_layout"
+        android:layout_alignParentEnd="true">
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scaleType="centerCrop"
+          android:id="@+id/uploading_thumb"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/black"
+          android:alpha="0.6"/>
+
+
+      <ProgressBar
+          android:layout_centerInParent="true"
+          android:id="@+id/progressBar"
+          style="?android:progressBarStyleHorizontal"
+          android:layout_width="@dimen/_60sdp"
+          android:layout_height="@dimen/_60sdp"
+          android:max="100"
+          android:progressDrawable="@drawable/circle_progress"
+          android:indeterminate="false"
+          android:progress="0" />
+
+
+      <TextView
+          android:id="@+id/tvProgressCount"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textStyle="normal"
+          android:text=""
+          android:includeFontPadding="false"
+          android:layout_centerInParent="true"
+          android:textSize="@dimen/_15sdp"
+          android:shadowColor="@color/black"
+          android:shadowDx="1"
+          android:shadowDy="1"
+          android:shadowRadius="3"
+          android:textColor="@color/white"
+
+          />
+
+    </RelativeLayout>
+
+
+  </RelativeLayout>
+
+  </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</FrameLayout>

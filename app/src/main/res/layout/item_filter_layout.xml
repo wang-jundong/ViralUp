@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_12sdp"
+    android:layout_marginStart="@dimen/_12sdp"
+    tools:background="@color/black">
+
+    <jp.co.cyberagent.android.gpuimage.GPUImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:padding="@dimen/_2sdp"
+        app:gpuimage_show_loading="false"
+        app:gpuimage_surface_type="texture_view"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/filter_txt"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/_2sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:maxLines="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_photo"
+        tools:text="@string/filter_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_70sdp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="@dimen/_6sdp"
+        android:paddingEnd="@dimen/_6sdp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:id="@+id/user_image"
+            app:roundAsCircle="true"
+            app:placeholderImageScaleType="centerCrop"
+            app:actualImageScaleType="fitCenter"
+            fresco:placeholderImage="@drawable/ic_user_icon"
+            android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:id="@+id/tick_icon"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                app:tint="@color/white"
+                android:src="@drawable/ic_tick"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:id="@+id/user_name"
+            android:textSize="@dimen/_10sdp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

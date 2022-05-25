@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:clickable="true"
+    tools:context=".ActivitesFragment.Profile.Setting.DeleteAccountA">
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingEnd="@dimen/_12sdp"
+        android:paddingStart="@dimen/_12sdp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <ImageButton
+            android:id="@+id/goBack"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_back"
+            android:tint="@color/black" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:paddingStart="@dimen/_22sdp"
+            android:paddingEnd="@dimen/_22sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+           >
+
+            <TextView
+                android:layout_marginTop="@dimen/_32sdp"
+                android:id="@+id/tvDeleteTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="center_vertical|start"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_12sdp"
+                android:id="@+id/tvDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:lineSpacingExtra="@dimen/_2sdp"
+                android:text="@string/delete_account_detail"
+                android:gravity="center_vertical|start"
+                android:textColor="@color/darkgray"
+                android:textStyle="normal"
+                android:textSize="@dimen/_11sdp" />
+
+            <Button
+                android:id="@+id/deleteAccount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:gravity="center"
+                android:text="@string/continue_"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp"
+                android:theme="@style/Button_style" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

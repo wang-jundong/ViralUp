@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".ActivitesFragment.Profile.InviteFriendsA">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:background="@drawable/d_bottom_gray_line"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_back"
+            android:tint="@color/black" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/find_friends"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+
+
+        <ImageView
+            android:id="@+id/ivQrCode"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_4sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_qr_scan" />
+
+
+    </RelativeLayout>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+       android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            style="@style/Widget.Design.AppBarLayout"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:contentScrim="@color/white"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        app:cardCornerRadius="@dimen/_6sdp"
+                        app:cardElevation="0dp"
+                        android:id="@+id/search_layout"
+                        app:cardBackgroundColor="@color/lightgraycolor">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_38sdp"
+                            android:paddingStart="@dimen/_6sdp"
+                            android:paddingEnd="@dimen/_6sdp">
+
+                            <ImageButton
+                                android:layout_width="@dimen/_18sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:id="@+id/search"
+                                android:padding="@dimen/_2sdp"
+                                android:scaleType="fitCenter"
+                                android:layout_centerVertical="true"
+                                android:background="@color/transparent"
+                                android:tint="@color/dimgray"
+                                android:src="@drawable/ic_discovery_gray"/>
+
+                            <TextView
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/search_users"
+                                android:paddingStart="@dimen/_6sdp"
+                                android:paddingEnd="@dimen/_2sdp"
+                                android:paddingTop="@dimen/_4sdp"
+                                android:paddingBottom="@dimen/_4sdp"
+                                android:textSize="@dimen/_11sdp"
+                                android:id="@+id/search_edit"
+                                android:textColor="@color/darkgray"
+                                android:layout_toEndOf="@+id/search"
+                                android:backgroundTint="@color/transparent"
+                                />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <RelativeLayout
+                        android:id="@+id/tabInviteAppFriends"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_12sdp">
+
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/ivInviteFriend"
+                            android:layout_alignParentStart="true"
+                            android:layout_width="@dimen/_45sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_centerVertical="true"
+                            fresco:placeholderImage="@drawable/ic_invite_tictok_friends" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/ivInviteFriend"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_toStartOf="@+id/btnFindInviteFriend"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_6sdp"
+                                android:layout_marginEnd="@dimen/_6sdp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/invite_friends"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:id="@+id/tvInviteFriendTitle"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tvInviteFriendSubtitle"
+                                    android:text="@string/stay_connected_on"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:maxLines="2"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:textColor="@color/darkgray"/>
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/btnFindInviteFriend"
+                                android:textSize="@dimen/_11sdp"
+                                android:text="@string/invite"
+                                android:textStyle="bold"
+                                android:background="@drawable/button_rounded_background"
+                                android:paddingTop="@dimen/_6sdp"
+                                android:paddingBottom="@dimen/_6sdp"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:textColor="@color/white"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tabInviteFriendsByContacts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_6sdp">
+
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/ivFriendsByContacts"
+                            android:layout_width="@dimen/_45sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_centerVertical="true"
+                            fresco:placeholderImage="@drawable/ic_invite_contacts" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/ivFriendsByContacts"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_toStartOf="@+id/btnFindInviteFriendsByContacts"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_6sdp"
+                                android:layout_marginEnd="@dimen/_6sdp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/contacts"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/find_your_contacts"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:maxLines="2"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:textColor="@color/darkgray"/>
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/btnFindInviteFriendsByContacts"
+                                android:textSize="@dimen/_11sdp"
+                                android:text="@string/find"
+                                android:textStyle="bold"
+                                android:background="@drawable/button_rounded_background"
+                                android:paddingTop="@dimen/_6sdp"
+                                android:paddingBottom="@dimen/_6sdp"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:textColor="@color/white"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/tabInviteFacebookFriends"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginEnd="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_6sdp">
+
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/ivInviteFacebookFriend"
+                            android:layout_alignParentStart="true"
+                            android:layout_width="@dimen/_45sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_centerVertical="true"
+                            fresco:placeholderImage="@drawable/ic_invite_facebook" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/ivInviteFacebookFriend"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_toStartOf="@+id/btnFindInviteFacebookFriend"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_6sdp"
+                                android:layout_marginEnd="@dimen/_6sdp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/facebook_friends"
+                                    android:textSize="@dimen/_11sdp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/find_friends_on_facebook"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:maxLines="2"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:textColor="@color/darkgray"/>
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/btnFindInviteFacebookFriend"
+                                android:textSize="@dimen/_11sdp"
+                                android:text="@string/find"
+                                android:textStyle="bold"
+                                android:background="@drawable/button_rounded_background"
+                                android:paddingTop="@dimen/_6sdp"
+                                android:paddingBottom="@dimen/_6sdp"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:textColor="@color/white"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <include layout="@layout/layout_invite_friends_suggestion_tabs" />
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

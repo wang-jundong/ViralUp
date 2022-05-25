@@ -1,0 +1,149 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/comment_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context="com.qboxus.musictok.ActivitesFragment.CommentF">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_130sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/d_top_left_right_radius">
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_12sdp">
+
+            <ImageView
+                android:id="@+id/goBack"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_6sdp"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_white_cross"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/top_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/write_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recylerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/load_more_progress"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true" />
+
+
+            <ProgressBar
+                android:id="@+id/noDataLoader"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:theme="@style/Progressbar_style"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/no_comment"
+                android:layout_centerInParent="true"
+                android:textColor="@color/dimgray"
+                android:id="@+id/no_data_layout"
+                android:visibility="gone"
+                android:textSize="@dimen/_11sdp"/>
+
+            <ProgressBar
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/load_more_progress"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/Progressbar_style"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/write_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:background="@drawable/d_top_gray_line"
+            android:paddingStart="@dimen/_6sdp"
+            android:paddingEnd="@dimen/_6sdp">
+
+            <EditText
+                android:id="@+id/message_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/send_btn_layout"
+                android:background="@color/transparent"
+                android:hint="@string/leave_a_comment"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:textSize="@dimen/_11sdp" />
+
+            <RelativeLayout
+                android:id="@+id/send_btn_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/send_btn"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/_2sdp"
+                    android:rotation="-45"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_send" />
+
+                <ProgressBar
+                    android:id="@+id/send_progress"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</FrameLayout>

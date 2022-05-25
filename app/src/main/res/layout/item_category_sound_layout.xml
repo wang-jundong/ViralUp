@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_8sdp">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/title"
+            android:layout_toStartOf="@+id/see_all_btn"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/see_all"
+            android:textSize="@dimen/_10sdp"
+            android:id="@+id/see_all_btn"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/darkgray"
+            android:padding="@dimen/_4sdp"/>
+
+    </RelativeLayout>
+
+
+       <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:minHeight="@dimen/_60sdp"
+         android:id="@+id/horizontal_recylerview"/>
+
+
+</LinearLayout>

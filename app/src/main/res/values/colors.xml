@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c52127</color>
+    <color name="colorPrimaryDark">#c52127</color>
+    <color name="colorAccent">#c52127</color>
+    <color name="Sanddtorm">#FFE595</color>
+    <color name="white">#ffffff</color>
+    <color name="colorwhite_50">#CCffffff</color>
+    <color name="colorwhite_30">#4Dffffff</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="graycolor">#D3D3D3</color>
+    <color name="graycolor2">#C5C4C4</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="lightgraycolor">#f2f2f2</color>
+    <color name="darkgray">#93959A</color>
+    <color name="darkgray_30">#4D5D5D5D</color>
+    <color name="dimgray">#696969</color>
+    <color name="lightblack">#5d5d5d</color>
+    <color name="delete_message_bg">#f2f2f2</color>
+    <color name="delete_message_text">#b8b8b8</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="fifty_transparent_black">#802F2F2F</color>
+    <color name="redcolor">#ff0008</color>
+    <color name="greenColor">#52D357</color>
+    <color name="gray_lightest">#DEDEDE</color>
+    <color name="gray_light">#CCCCCC</color>
+    <color name="blue">#007AFF</color>
+    <color name="likeblue">#CBF4FA</color>
+</resources>

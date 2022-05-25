@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ActivitesFragment.Profile.SendDirectMsg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            app:cardCornerRadius="@dimen/_6sdp"
+            app:cardElevation="0dp"
+            android:id="@+id/search_layout"
+            app:cardBackgroundColor="@color/lightgraycolor">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:paddingStart="@dimen/_6sdp"
+                android:paddingEnd="@dimen/_6sdp">
+
+                <ImageButton
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:id="@+id/search"
+                    android:padding="@dimen/_2sdp"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:tint="@color/dimgray"
+                    android:src="@drawable/ic_discovery_gray"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/search_"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:paddingEnd="@dimen/_2sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:textSize="@dimen/_11sdp"
+                    android:inputType="textNoSuggestions"
+                    android:id="@+id/search_edit"
+                    android:imeOptions="actionSearch"
+                    android:textColorHint="@color/darkgray"
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@+id/search"
+                    android:background="@color/transparent"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_above="@+id/tabMessageSend"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/search_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+           <androidx.core.widget.NestedScrollView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:id="@+id/tabUser"
+                   android:layout_alignParentTop="true"
+                   android:layout_centerHorizontal="true"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <androidx.recyclerview.widget.RecyclerView
+                       android:nestedScrollingEnabled="false"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:id="@+id/recylerviewFollower"/>
+
+                   <TextView
+                       android:layout_marginTop="@dimen/_10sdp"
+                       android:layout_marginStart="@dimen/_12sdp"
+                       android:layout_marginEnd="@dimen/_12sdp"
+                       android:layout_height="wrap_content"
+                       android:layout_width="wrap_content"
+                       android:text="@string/following"
+                       android:textColor="@color/dimgray"
+                       android:id="@+id/tv_following"
+                       android:textSize="@dimen/_11sdp"/>
+
+
+                   <androidx.recyclerview.widget.RecyclerView
+                       android:nestedScrollingEnabled="false"
+                       android:layout_marginTop="@dimen/_10sdp"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:id="@+id/recylerviewFollowing"/>
+
+
+
+               </LinearLayout>
+
+           </androidx.core.widget.NestedScrollView>
+
+            <LinearLayout
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:id="@+id/tabSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/recylerviewSearch"/>
+
+                <ProgressBar
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/load_more_progress"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:theme="@style/Progressbar_style"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/no_data_layout"
+                android:gravity="center"
+                android:visibility="gone"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/whoops"
+                    android:textColor="@color/dimgray"
+                    android:id="@+id/whoops"
+                    android:textSize="@dimen/_15sdp"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/whoops"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="@color/dimgray"
+                    android:layout_marginStart="@dimen/_22sdp"
+                    android:layout_marginEnd="@dimen/_22sdp"
+                    android:text="@string/no_fav_video"
+                    android:textSize="@dimen/_11sdp"/>
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:id="@+id/tabMessageSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/gainsboro"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtMessage"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/ivUserPic"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_80sdp"
+                    android:hint="@string/your_message"
+                    android:textColorHint="@color/darkgray"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:maxLength="250"
+                    android:background="@color/transparent"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/black"/>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/ivUserPic"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/gainsboro"/>
+
+            <TextView
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@drawable/button_rounded_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:text="@string/send"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:id="@+id/sendBtn"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
