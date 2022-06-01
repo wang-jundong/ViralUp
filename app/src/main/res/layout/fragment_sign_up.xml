@@ -66,6 +66,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
+                android:visibility="gone"
                 app:tabBackground="@color/white"
                 app:tabGravity="fill"
                 app:tabIndicatorColor="@color/colorPrimary"
@@ -80,6 +81,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_16sdp"
                 android:layout_below="@+id/tabs" />
 
         </RelativeLayout>

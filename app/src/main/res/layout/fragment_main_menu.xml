@@ -5,15 +5,14 @@
     android:id="@+id/mainMenuFragment"
     android:background="@color/black"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.qboxus.musictok.MainMenu.MainMenuActivity">
-
+    tools:context="com.viral.musictok.MainMenu.MainMenuActivity">
 
      <RelativeLayout
          android:layout_width="match_parent"
          android:layout_height="match_parent">
 
 
-        <com.qboxus.musictok.MainMenu.CustomViewPager
+        <com.viral.musictok.MainMenu.CustomViewPager
             android:id="@+id/viewpager"
             android:layout_above="@+id/tabs"
             android:layout_width="match_parent"

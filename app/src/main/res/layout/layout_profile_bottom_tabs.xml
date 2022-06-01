@@ -1,56 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tabs_main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/fragment_profile_tab">
+    android:orientation="vertical">
 
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        app:tabBackground="@color/white"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/black"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="@dimen/_2sdp"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="@dimen/_32sdp"
+        app:tabPaddingStart="@dimen/_32sdp"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="@color/dimgray" />
 
-    <RelativeLayout
-        android:id="@+id/tabs_main_layout"
+    <LinearLayout
+        android:id="@+id/tabBottomLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tabs"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.4"
+        android:background="@color/gainsboro"
+        android:orientation="horizontal" />
+
+    <com.viral.musictok.ActivitesFragment.Profile.CustomViewPager2
+        android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_below="@+id/tabBottomLine"
+        android:nestedScrollingEnabled="true"
+        android:layout_centerHorizontal="true" />
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabs"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:gravity="center"
-            app:tabBackground="@color/white"
-            app:tabGravity="fill"
-            app:tabIndicatorColor="@color/black"
-            app:tabIndicatorHeight="@dimen/_2sdp"
-            app:tabIndicatorFullWidth="false"
-            app:tabMode="fixed"
-            app:tabPaddingEnd="@dimen/_32sdp"
-            app:tabPaddingStart="@dimen/_32sdp"
-            app:tabSelectedTextColor="@color/black"
-            app:tabTextColor="@color/dimgray" />
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:id="@+id/tabBottomLine"
-            android:layout_below="@+id/tabs"
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:alpha="0.4"
-            android:layout_centerHorizontal="true"
-            android:background="@color/gainsboro" />
-
-
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/pager"
-            android:layout_centerHorizontal="true"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/tabBottomLine" />
-
-    </RelativeLayout>
-
-</FrameLayout>
+</RelativeLayout>

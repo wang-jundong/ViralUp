@@ -7,7 +7,7 @@
     android:background="@color/transparent"
     android:clickable="true"
     android:focusable="true"
-    tools:context="com.qboxus.musictok.ActivitesFragment.CommentF">
+    tools:context="com.viral.musictok.ActivitesFragment.CommentF">
 
     <RelativeLayout
         android:layout_marginTop="@dimen/_130sdp"

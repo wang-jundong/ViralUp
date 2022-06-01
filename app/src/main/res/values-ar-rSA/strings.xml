@@ -59,7 +59,7 @@
     <string name="login">تسجيل الدخول</string>
     <string name="login_in_to_musictok">تسجيل الدخول إلى Musictok</string>
     <string name="manage_your_account_check_notification_comments_on_videos_and_more">إدارة حسابك والتحقق من الإشعارات والتعليقات على مقاطع الفيديو والمزيد</string>
-    <string name="user_phone_email_username">هاتف المستخدم / البريد الإلكتروني / اسم المستخدم</string>
+    <string name="user_phone_email_username">البريد الإلكتروني للمستخدم / اسم المستخدم</string>
     <string name="continue_with_facebook">تواصل مع الفيسبوك</string>
     <string name="continue_with_google">تواصل مع جوجل</string>
     <string name="don_t_have_a_account">ليس لديك حساب؟</string>
@@ -116,7 +116,7 @@
     <string name="are_you_sure_to_logout">هل أنت متأكد من تسجيل الخروج؟</string>
     <string name="logout">تسجيل خروج</string>
     <string name="home">منزل</string>
-    <string name="discover">يكتشف</string>
+    <string name="discover">يبحث</string>
     <string name="profile">الملف الشخصي</string>
     <string name="video_already_in_progress">من فضلك انتظر الفيديو قيد التحميل بالفعل</string>
     <string name="tap_to_exist">انقر مرة أخرى للخروج</string>

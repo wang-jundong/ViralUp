@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "57222202041",
+    "firebase_url": "https://tictic-1c9a8-default-rtdb.firebaseio.com",
+    "project_id": "tictic-1c9a8",
+    "storage_bucket": "tictic-1c9a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57222202041:android:e29cfd059ef64f390ad168",
+        "android_client_info": {
+          "package_name": "com.viral.musictok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57222202041-ehqour8svqurqj5t6nmdgbgq52hs7u62.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.viral.musictok",
+            "certificate_hash": "c43a11357d60ca37c8bd032c33a01ec2d95f182c"
+          }
+        },
+        {
+          "client_id": "57222202041-gat1d6uu57reii1iqh2j02oeugpi51lf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0eo0RZ_uGG30xfFiRcJRzoYDJ_-wealE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57222202041-gat1d6uu57reii1iqh2j02oeugpi51lf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

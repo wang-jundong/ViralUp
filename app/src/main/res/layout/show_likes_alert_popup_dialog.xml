@@ -60,7 +60,6 @@
             android:layout_height="@dimen/_1sdp"
             android:background="@color/gainsboro" />
 
-
         <LinearLayout
             android:gravity="center_vertical|end"
             android:layout_width="match_parent"

@@ -3,7 +3,7 @@
 
     <!--change only the package name if you have change the package name of app-->
 
-    <external-path name="my_images" path="Android/data/com.qboxus.musictok/files/Pictures" />
+    <external-path name="my_images" path="Android/data/com.viral.musictok/files/Pictures" />
 
     <external-path name="external_files" path="."/>
 

@@ -8,18 +8,35 @@ android {
     compileSdkVersion 32
 
     defaultConfig {
-        applicationId "com.qboxus.musictok"
+        applicationId "com.viral.musictok"
         minSdkVersion 21
         targetSdkVersion 32
-        versionCode 48
-        versionName "5.7"
+        versionCode 100
+        versionName "1.0.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
+        archivesBaseName = "ViralUp_v$versionName"
     }
 
     compileOptions {
         targetCompatibility JavaVersion.VERSION_1_8
         sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('C://Users/Home/.android/debug.keystore')
+            storePassword 'android'
+        }
+        release {
+            keyAlias 'tictic123'
+            keyPassword 'tictic123'
+            storeFile file("E://Information/keystore/tictic/key_tictic.jks")
+            storePassword 'tictic123'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
     }
 
     buildTypes {
@@ -129,7 +146,7 @@ dependencies {
 
     implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.3.0'
     implementation 'com.github.danylovolokh:hashtag-helper:1.1.0'
-
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.17'
     implementation 'com.facebook.shimmer:shimmer:0.4.0'
     implementation 'com.facebook.fresco:fresco:2.3.0'
     implementation 'com.facebook.fresco:animated-gif:2.3.0'

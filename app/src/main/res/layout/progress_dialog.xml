@@ -9,7 +9,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <com.qboxus.musictok.TrimModule.CustomProgress
+    <com.viral.musictok.TrimModule.CustomProgress
         android:layout_width="@dimen/_32sdp"
         android:layout_height="@dimen/_32sdp"
         android:layout_centerHorizontal="true"

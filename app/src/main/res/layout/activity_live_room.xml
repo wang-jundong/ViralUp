@@ -12,16 +12,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.qboxus.musictok.ActivitesFragment.LiveStreaming.ui.VideoGridContainer
+        <com.viral.musictok.ActivitesFragment.LiveStreaming.ui.VideoGridContainer
             android:id="@+id/live_video_grid_layout"
             android:clickable="false"
             android:focusable="false"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
-
-
-        <com.qboxus.musictok.SimpleClasses.StreamingLikes.HeartView
+        <com.viral.musictok.SimpleClasses.StreamingLikes.HeartView
             android:layout_marginTop="@dimen/_60sdp"
             android:clickable="false"
             android:focusable="false"

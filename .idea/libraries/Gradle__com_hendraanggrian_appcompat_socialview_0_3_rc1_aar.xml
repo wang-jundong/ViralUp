@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.hendraanggrian.appcompat:socialview:0.3-rc1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/77eac8a176d4787533dbd55339d52501/jetified-socialview-0.3-rc1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/77eac8a176d4787533dbd55339d52501/jetified-socialview-0.3-rc1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/77eac8a176d4787533dbd55339d52501/jetified-socialview-0.3-rc1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hendraanggrian.appcompat/socialview/0.3-rc1/eb10544a72991df7f63908ec463a726dd0378b97/socialview-0.3-rc1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hendraanggrian.appcompat/socialview/0.3-rc1/690acae67d9def79afe09f1d0a8cd7c7c2fa4005/socialview-0.3-rc1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

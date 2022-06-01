@@ -3,14 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.qboxus.musictok.ActivitesFragment.SplashA">
+    tools:context="com.viral.musictok.ActivitesFragment.SplashA">
 
-
-    <ImageView
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgSplash"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/splash"
-        android:scaleType="centerCrop"/>
-
+        android:src="@drawable/splash" />
 
 </RelativeLayout>

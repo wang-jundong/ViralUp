@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.qboxus.musictok">
+    package="com.viral.musictok">
 
     <queries>
         <package android:name="com.facebook.katana" />
@@ -34,7 +34,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
-        android:name=".SimpleClasses.TicTic"
+        android:name="com.viral.musictok.SimpleClasses.TicTic"
         android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -42,219 +42,218 @@
         android:largeHeap="true"
         android:networkSecurityConfig="@xml/network_security_config"
         android:requestLegacyExternalStorage="true"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="allowBackup,supportsRtl">
         <activity
-            android:name=".ActivitesFragment.Profile.Setting.BlockUserListA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.Setting.BlockUserListA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.Setting.NoInternetA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.Setting.NoInternetA"
             android:exported="true"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait"
             android:theme="@style/black_status"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.InviteFriends.InviteFriendsFromContactsA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.InviteFriends.InviteFriendsFromContactsA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.SearchAllUserA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.SearchAllUserA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.InviteFriendsA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.InviteFriendsA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.SendDirectMsg"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.SendDirectMsg"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.VideoRecording.FriendsA"
+            android:name="com.viral.musictok.ActivitesFragment.VideoRecording.FriendsA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.SoundLists.SectionSoundListA"
+            android:name="com.viral.musictok.ActivitesFragment.SoundLists.SectionSoundListA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.TagedVideosA"
+            android:name="com.viral.musictok.ActivitesFragment.TagedVideosA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.WebviewA"
+            android:name="com.viral.musictok.ActivitesFragment.WebviewA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.PrivacyVideoSettingA"
+            android:name="com.viral.musictok.ActivitesFragment.PrivacyVideoSettingA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.LiveUsersA"
+            android:name="com.viral.musictok.ActivitesFragment.LiveUsersA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Chat.ChatA"
+            android:name="com.viral.musictok.ActivitesFragment.Chat.ChatA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.InboxA"
+            android:name="com.viral.musictok.ActivitesFragment.InboxA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Search.SearchMainA"
+            android:name="com.viral.musictok.ActivitesFragment.Search.SearchMainA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.SubmitReportA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.SubmitReportA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.ReportTypeA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.ReportTypeA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.EditProfileA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.EditProfileA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.Setting.UpdateEmailPhoneNoVerification"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.Setting.UpdateEmailPhoneNoVerification"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.Setting.AddPayoutMethodA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.Setting.AddPayoutMethodA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.Setting.WalletPaymentA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.Setting.WalletPaymentA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.Setting.PushNotificationSettingA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.Setting.PushNotificationSettingA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.Setting.PrivacyPolicySettingA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.Setting.PrivacyPolicySettingA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.Setting.ProfileVarificationA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.Setting.ProfileVarificationA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.Setting.QrCodeScannerA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.Setting.QrCodeScannerA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.Setting.UpdateEmailPhoneA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.Setting.UpdateEmailPhoneA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.Setting.DeleteAccountA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.Setting.DeleteAccountA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.Setting.ChangePasswordA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.Setting.ChangePasswordA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.WatchVideosA"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:theme="@style/black_status"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".ActivitesFragment.Profile.Setting.ManageProfileA"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".ActivitesFragment.Profile.Setting.AppSpaceClearA"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".ActivitesFragment.Profile.Setting.AppLanguageChangeA"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".ActivitesFragment.Profile.Setting.QrCodeProfileA"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".ActivitesFragment.Profile.SettingAndPrivacyA"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".ActivitesFragment.Profile.SeeFullImageA"
+            android:name="com.viral.musictok.ActivitesFragment.WatchVideosA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/black_status"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.VideoRecording.ActVideoTrimmer"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.Setting.ManageProfileA"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.viral.musictok.ActivitesFragment.Profile.Setting.AppSpaceClearA"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.viral.musictok.ActivitesFragment.Profile.Setting.AppLanguageChangeA"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.viral.musictok.ActivitesFragment.Profile.Setting.QrCodeProfileA"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.viral.musictok.ActivitesFragment.Profile.SettingAndPrivacyA"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.viral.musictok.ActivitesFragment.Profile.SeeFullImageA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/black_status"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.FollowsMainTabA"
+            android:name="com.viral.musictok.ActivitesFragment.VideoRecording.ActVideoTrimmer"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/black_status"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.viral.musictok.ActivitesFragment.Profile.FollowsMainTabA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustNothing" />
         <activity
-            android:name=".ActivitesFragment.Profile.FavouriteMainA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.FavouriteMainA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Profile.ProfileA"
+            android:name="com.viral.musictok.ActivitesFragment.Profile.ProfileA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Accounts.ForgotPassA"
+            android:name="com.viral.musictok.ActivitesFragment.Accounts.ForgotPassA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/transparent_status"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.VideoRecording.VideoRecoderDuetA"
+            android:name="com.viral.musictok.ActivitesFragment.VideoRecording.VideoRecoderDuetA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/black_status"
@@ -273,41 +272,47 @@
             android:theme="@style/Base.Theme.AppCompat"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.WalletAndWithdraw.MyWallet"
+            android:name="com.viral.musictok.ActivitesFragment.NewCoin.CoinBalanceA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/white_status"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.WalletAndWithdraw.WithdrawCoinsA"
+            android:name="com.viral.musictok.ActivitesFragment.WalletAndWithdraw.MyWallet"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/white_status"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.SoundLists.VideoSoundA"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".ActivitesFragment.VideoRecording.DraftVideosA"
+            android:name="com.viral.musictok.ActivitesFragment.WalletAndWithdraw.WithdrawCoinsA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/white_status"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.VideoRecording.GallerySelectedVideoA"
+            android:name="com.viral.musictok.ActivitesFragment.SoundLists.VideoSoundA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.Accounts.LoginA"
+            android:name="com.viral.musictok.ActivitesFragment.VideoRecording.DraftVideosA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/white_status"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.SplashA"
+            android:name="com.viral.musictok.ActivitesFragment.VideoRecording.GallerySelectedVideoA"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.viral.musictok.ActivitesFragment.Accounts.LoginA"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/white_status"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.viral.musictok.ActivitesFragment.SplashA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/splashFullScreen"
@@ -319,7 +324,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainMenu.MainMenuActivity"
+            android:name="com.viral.musictok.MainMenu.MainMenuActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
@@ -346,46 +351,46 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ActivitesFragment.VideoRecording.VideoRecoderA"
+            android:name="com.viral.musictok.ActivitesFragment.VideoRecording.VideoRecoderA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/black_status"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.VideoRecording.PreviewVideoA"
+            android:name="com.viral.musictok.ActivitesFragment.VideoRecording.PreviewVideoA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/black_status"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.VideoRecording.PostVideoA"
+            android:name="com.viral.musictok.ActivitesFragment.VideoRecording.PostVideoA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing" />
         <activity
-            android:name=".ActivitesFragment.SoundLists.SoundListMainA"
+            android:name="com.viral.musictok.ActivitesFragment.SoundLists.SoundListMainA"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".ActivitesFragment.LiveStreaming.activities.StreamingMain_A"
+            android:name="com.viral.musictok.ActivitesFragment.LiveStreaming.activities.StreamingMain_A"
             android:exported="true"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/black_status"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".ActivitesFragment.LiveStreaming.activities.LiveActivity"
+            android:name="com.viral.musictok.ActivitesFragment.LiveStreaming.activities.LiveActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/black_status"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
-            android:name=".ActivitesFragment.LiveStreaming.activities.SettingsActivity"
+            android:name="com.viral.musictok.ActivitesFragment.LiveStreaming.activities.SettingsActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
-        <activity android:name=".ActivitesFragment.CustomErrorActivity" />
+        <activity android:name="com.viral.musictok.ActivitesFragment.CustomErrorActivity" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
@@ -393,7 +398,7 @@
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@mipmap/ic_launcher_foreground" />
+            android:resource="@mipmap/ic_launcher" />
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/redcolor" />
@@ -429,7 +434,7 @@
         </provider>
 
         <service
-            android:name=".Services.UploadService"
+            android:name="com.viral.musictok.Services.UploadService"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -437,7 +442,7 @@
             </intent-filter>
         </service>
         <service
-            android:name=".FirebaseNotification.NotificationReceive"
+            android:name="com.viral.musictok.FirebaseNotification.NotificationReceive"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

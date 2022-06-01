@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.castorflex.verticalviewpager:library:19.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/761e5254ea7017433e00df219fdc6ad0/jetified-library-19.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/761e5254ea7017433e00df219fdc6ad0/jetified-library-19.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/761e5254ea7017433e00df219fdc6ad0/jetified-library-19.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.castorflex.verticalviewpager/library/19.0.1/a8384fd923fc06b744ade999ec126ebf8194e80d/library-19.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.castorflex.verticalviewpager/library/19.0.1/6e2fffb976cbdac3f791eb34469d9fc7edfcf094/library-19.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

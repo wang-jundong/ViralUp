@@ -69,7 +69,7 @@
                 app:tabTextAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 app:tabTextColor="@color/darkgray" />
 
-            <com.qboxus.musictok.MainMenu.CustomViewPager
+            <com.viral.musictok.MainMenu.CustomViewPager
                 android:id="@+id/viewpager"
                 android:layout_centerHorizontal="true"
                 android:layout_alignParentBottom="true"

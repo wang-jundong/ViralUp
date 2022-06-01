@@ -1,25 +1,25 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <string name="app_name" translatable="false">TicTic</string>
+    <string name="app_name" translatable="false">ViralUp</string>
 
 
-    <string name="facebook_app_id" translatable="false">fb_id</string>
-    <string name="fb_login_protocol_scheme" translatable="false">fb(fb_id)</string>
-    <string name="facebook_client_token" translatable="false">facebook_client_token</string>
+    <string name="facebook_app_id" translatable="false">1427948637665459</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb1427948637665459</string>
+    <string name="facebook_client_token" translatable="false">6b8b4ef42fb67764e2b822af88868357</string>
 
-    <string name="google_web_client_id" translatable="false">google_auth_web_client_id</string>
+    <string name="google_web_client_id" translatable="false">57222202041-sbbikgepicba6no14ne7ogj9aka77h3k.apps.googleusercontent.com</string>
 
-     <string name="gif_api_key" translatable="false">gif_api_key_here</string>
+     <string name="gif_api_key" translatable="false">ZeQtbtJhuW6ssNzI0sJQoTRVo62CD4S1</string>
 
-    <string name="agora_app_id" translatable="false">your_agora_app_id</string>
+    <string name="agora_app_id" translatable="false">b730ee29c3cf46228c11eb0729e0f362</string>
 
     <string name="ad_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
     <string name="my_Interstitial_Add" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
     <string name="banner_ad" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
 
 
-    <string name="share_profile_domain" translatable="false">apps.qboxus.com</string>
-    <string name="share_profile_domain_second" translatable="false">demo.qboxus.com</string>
+    <string name="share_profile_domain" translatable="false">apps.viral.com</string>
+    <string name="share_profile_domain_second" translatable="false">demo.viral.com</string>
     <string name="share_profile_endpoint" translatable="false">/tictic/</string>
     <string name="share_profile_endpoint_second" translatable="false">/profile/</string>
 
@@ -86,7 +86,7 @@
     <string name="login">Login</string>
     <string name="login_in_to_musictok">Login in to Musictok</string>
     <string name="manage_your_account_check_notification_comments_on_videos_and_more">Manage Your account, check notification, comments on videos, and more</string>
-    <string name="user_phone_email_username">User phone / email / username</string>
+    <string name="user_phone_email_username">User email / username</string>
     <string name="continue_with_facebook">Continue With Facebook</string>
     <string name="continue_with_google">Continue With Google</string>
     <string name="don_t_have_a_account">Don\'t have a account?</string>
@@ -145,7 +145,7 @@
     <string name="are_you_sure_to_logout">Are you sure to logout?</string>
     <string name="logout">Logout</string>
     <string name="home">Home</string>
-    <string name="discover">Discover</string>
+    <string name="discover">Search</string>
     <string name="profile">Profile</string>
     <string name="video_already_in_progress">Please wait video already in uploading progress</string>
     <string name="tap_to_exist">Tap Again To Exit</string>
@@ -546,5 +546,20 @@
     <string name="single_is_week">single is week</string>
     <string name="dummy_like">likes</string>
     <string name="video_is_larger_then">Video is larger then</string>
+
+    <string name="profile_token_wallet_hint" translatable="false">BSC WALLET</string>
+    <string name="profile_token_video_views" translatable="false">VIDEO VIEWS 1000</string>
+    <string name="profile_token_unit" translatable="false">$VIRAL</string>
+    <string name="profile_token_claim" translatable="false">CLAIM</string>
+    <string name="profile_token_nft_collection" translatable="false">NFT COLLECTION</string>
+    <string name="profile_token_level" translatable="false">LEVEL:</string>
+    <string name="profile_token_none" translatable="false">NONE</string>
+    <string name="profile_token_number" translatable="false">NUMBER: 0</string>
+    <string name="profile_token_nft_market" translatable="false">NFT MARKET</string>
+
+    <string name="dialog_claim_success" translatable="false">CLAIM SUCCESS</string>
+    <string name="dialog_claim_received" translatable="false">You received 100 $Viral</string>
+    <string name="dialog_claim_activate" translatable="false">ACTIVATE CLAIM</string>
+    <string name="dialog_claim_activate_content" translatable="false">To activate the Claim, you have to own an NFT</string>
 
 </resources>

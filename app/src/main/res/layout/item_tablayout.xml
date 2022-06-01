@@ -27,6 +27,7 @@
             android:textSize="@dimen/_8sdp"
             android:textStyle="bold"
             android:textColor="@color/darkgray"
+            android:visibility="visible"
             android:gravity="center"/>
 
     </LinearLayout>

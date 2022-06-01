@@ -141,8 +141,6 @@
                 android:textColorHint="@color/graycolor"
                 android:textSize="@dimen/_11sdp" />
 
-
-
         </LinearLayout>
 
 
